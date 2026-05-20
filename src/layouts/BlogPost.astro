@@ -21,30 +21,18 @@ const { title } = Astro.props;
 
   <style>
     body {
-      margin: 0;
-      font-family: Inter, sans-serif;
-      background: #f6f1e7;
-      color: #2f3a2f;
-      line-height: 1.6;
-    }
+      <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
 
-    h1, h2, h3 {
-      font-family: "Playfair Display", serif;
-    }
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-    a {
-      color: #4f6b4f;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-
-  <body>
-    <slot />
+  <style>
+    body {
+     <div style="background:red; color:white; padding:10px; text-align:center;">
+  TEST: If you see this, styling is working
+</div>
   </body>
 </html>
