@@ -1,35 +1,124 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<main style="max-width:900px; margin:auto; padding:60px 20px; line-height:1.6; color:#2f3a2f;">
+<!doctype html>
+<html lang="en">
 
-  <h1>About Me</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>About | Clinic Flow Studio</title>
 
-  <p>
-    I created this shop to help veterinary professionals stay organized, save time, and make clinic life feel a little less overwhelming.
-    As someone passionate about veterinary medicine and efficient workflows, I know how busy things can be behind the scenes, from patient care and paperwork to keeping the whole day running smoothly.
-  </p>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <p>
-    That is why I design clean, practical, and easy-to-use digital templates made specifically for vet clinics, vet techs, assistants, students, and pet care teams.
-    Whether you are looking for printable forms, editable clinic templates, trackers, or workflow tools, my goal is to make your daily routine easier and more organized.
-  </p>
+  <style>
+    body {
+      margin: 0;
+      font-family: Inter, sans-serif;
+      background: #f6f1e7;
+      color: #2f3a2f;
+      line-height: 1.8;
+    }
 
-  <p>
-    Everything in my shop is made with care, simplicity, and real clinic life in mind.
-  </p>
+    h1, h2 {
+      font-family: "Playfair Display", serif;
+    }
 
-  <h2>Outside the clinic</h2>
+    .container {
+      max-width: 850px;
+      margin: auto;
+      padding: 80px 20px;
+    }
 
-  <p>
-    When I am not designing templates, I spend time with my pets Juno, Luna, Sushi, and Sriracha.
-    I also love reading, hiking, painting, and watching horror movies.
-    Creativity and calm balance are a big part of my life, and they inspire everything I design.
-  </p>
+    .card {
+      background: white;
+      padding: 50px;
+      border-radius: 18px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+    }
 
-  <p>
-    Thank you so much for supporting my small business, I am so happy you are here!
-  </p>
+    .etsy-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 26px;
+      background: #4f6b4f;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
 
-</main>
+<body>
+
+  <Header />
+
+  <div class="container">
+
+    <div class="card">
+
+      <h1>About Me</h1>
+
+      <p>
+        I created this shop to help veterinary professionals stay organized,
+        save time, and make clinic life feel a little less overwhelming.
+      </p>
+
+      <p>
+        As someone passionate about veterinary medicine and efficient workflows,
+        I know how busy things can get behind the scenes —
+        from patient care and paperwork to keeping the entire day running smoothly.
+      </p>
+
+      <p>
+        That’s why I design clean, practical, and easy-to-use digital templates
+        made specifically for vet clinics, vet techs, assistants,
+        students, and pet care teams.
+      </p>
+
+      <p>
+        Whether you’re looking for printable forms,
+        editable clinic templates, workflow tools,
+        or organization trackers,
+        my goal is to make your daily routine easier and more organized.
+      </p>
+
+      <h2>Outside the Clinic</h2>
+
+      <p>
+        When I’m not designing templates,
+        I spend time with my pets — Juno, Luna, Sushi, and Sriracha.
+      </p>
+
+      <p>
+        I also love reading, hiking, painting,
+        and watching horror movies.
+        Creativity and calm balance inspire both my life and my work.
+      </p>
+
+      <p>
+        Everything in my shop is created with care,
+        simplicity, and real clinic life in mind.
+      </p>
+
+      <p>
+        Thank you so much for supporting my small business —
+        I’m so happy you’re here!
+      </p>
+
+      <a class="etsy-button"
+         href="https://www.etsy.com/shop/ClinicFlowStudio">
+        Visit My Etsy Shop
+      </a>
+
+    </div>
+
+  </div>
+
+  <Footer />
+
+</body>
+</html>
