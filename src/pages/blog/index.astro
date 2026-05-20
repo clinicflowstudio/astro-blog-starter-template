@@ -16,6 +16,13 @@ const posts = (await getCollection('blog')).sort(
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
+body {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(79,107,79,0.08), transparent 40%),
+    radial-gradient(circle at 80% 10%, rgba(79,107,79,0.06), transparent 35%),
+    radial-gradient(circle at 40% 80%, rgba(79,107,79,0.05), transparent 40%),
+    #f6f1e7;
+}
 			main {
 				width: 960px;
 			}
